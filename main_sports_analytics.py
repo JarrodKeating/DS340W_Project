@@ -13,12 +13,12 @@ if __name__ == "__main__":
 
     training_file_names = []
 
-    # problem = Problem_SPG_ice_hockey.SPG_ice_hockey()
-    problem = Problem_SPG_soccer.SPG_soccer()
+    problem = Problem_SPG_basketball.SPG_basketball()
+    #problem = Problem_SPG_soccer.SPG_soccer()
 
-    if problem.__class__.__name__ == 'SPG_ice_hockey':
-        training_file_path = training_file_path + '/ice_hockey/'
-        normalization_file_directory = normalization_file_directory + '/ice_hockey/'
+    if problem.__class__.__name__ == 'SPG_basketball':
+        training_file_path = training_file_path + '/basketball/'
+        normalization_file_directory = normalization_file_directory + '/basketball/'
 
         training_file_names.append('Q_shot_2019_11_13_11_14_23')
         training_file_names.append('impact_shot_2019_11_13_11_14_23')
@@ -26,6 +26,7 @@ if __name__ == "__main__":
         training_file_names.append('Q_pass_2019_11_19_18_12_33')
         training_file_names.append('impact_pass_2019_11_19_18_12_33')
 
+    """
     elif problem.__class__.__name__ == 'SPG_soccer':
         training_file_path = training_file_path + '/soccer/'
         normalization_file_directory = normalization_file_directory + '/soccer/'
@@ -35,6 +36,7 @@ if __name__ == "__main__":
 
         training_file_names.append('Q_simple_pass_soccer')
         training_file_names.append('impact_simple_pass_soccer')
+    """
 
     max_depth = None
 
